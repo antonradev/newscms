@@ -1,0 +1,70 @@
+News_CMS^PasswordUSER
+
+DN Host: localhost
+DB Name: newscms
+DB User: newscms
+DB Pass: News_CMS^PasswordUSER
+
+
+
+
+table `users`
+
+user_id                     INT(11)
+user_email                  VARCHAR(80)
+user_first_name             VARCHAR(60)
+user_last_name              VARCHAR(60)
+
+
+
+
+table `posts`
+
+post_id                     INT(11)
+post_title                  VARCHAR(255)
+post_author                 VARCHAR(255)
+post_subtitle               VARCHAR(255)
+post_published_date         DATETIME
+post_views                  INT(11)
+post_photo                  VARCHAR(80)
+post_photo_caption          TEXT
+post_content                TEXT
+category_id                 INT(11)
+
+
+
+table `categories`
+
+category_id                 INT(11)
+category_name               VARCHAR(255)
+category_description        VARCHAR(255)
+
+
+
+
+table `comments`
+
+comment_id                  INT(11)
+comment_date                DATETIME
+comment_author              VACHAR(255)
+comment_content             TEXT
+post_id                     INT(11)
+
+
+
+
+table `pages`
+
+page_id                     INT(11)
+page_title                  VARCHAR(255)
+page_keywords               VARCHAR(255)
+page_description            VARCHAR(255)
+page_content                TEXT
+
+
+
+table `sessions`
+
+id                          VARCHAR(32)
+access                      INT(10)
+data                        TEXT

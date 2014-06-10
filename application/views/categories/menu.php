@@ -1,0 +1,1 @@
+<li><a href="category.php?id=<?php echo $row['category_id']; ?>"><?php echo $row['category_name']; ?></a></li>
